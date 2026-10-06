@@ -1,0 +1,49 @@
+import { Link } from 'react-router-dom';
+import { Footer } from '../components/Footer';
+
+export function NotFoundPage() {
+  return (
+    <div className="flex min-h-screen flex-col bg-white text-ink">
+      {/* Minimal brand bar */}
+      <div className="border-b border-[#e5e5e5] px-5 py-4 sm:px-8 lg:px-10">
+        <Link
+          to="/"
+          className="text-[15px] font-bold uppercase tracking-[0.04em] leading-none text-black sm:text-[17px]"
+        >
+          Cimmple Hair<span className="text-rose">.</span>
+        </Link>
+      </div>
+
+      <main className="flex flex-1 items-center justify-center px-5 py-24 sm:px-8">
+        <div className="mx-auto max-w-md text-center">
+          <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-rose">
+            404
+          </p>
+          <h1 className="mt-3 text-[24px] font-bold uppercase leading-tight tracking-tight text-black sm:text-[30px]">
+            Page not found
+          </h1>
+          <p className="mt-4 text-[13px] leading-[1.7] text-black/60 sm:text-[14px]">
+            The page you're looking for doesn't exist, or has been moved.
+          </p>
+
+          <div className="mt-8 flex flex-col items-center gap-2.5 sm:flex-row sm:justify-center">
+            <Link
+              to="/"
+              className="inline-flex items-center gap-2 rounded-full bg-rose px-6 py-3 text-[11px] font-bold uppercase tracking-[0.18em] text-white transition-colors hover:bg-rose-deep"
+            >
+              Back home
+            </Link>
+            <Link
+              to="/shop"
+              className="inline-flex items-center gap-2 rounded-full border border-[#e5e5e5] px-6 py-3 text-[11px] font-bold uppercase tracking-[0.18em] text-black transition-colors hover:border-rose hover:text-rose"
+            >
+              Shop all
+            </Link>
+          </div>
+        </div>
+      </main>
+
+      <Footer />
+    </div>
+  );
+}
