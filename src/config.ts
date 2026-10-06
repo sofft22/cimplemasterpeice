@@ -1,14 +1,15 @@
 export const BRAND = {
-  name: 'Cimmple hair',
-  nameStrong: 'Cimmple',
-  nameLight: 'hair',
-  established: 'EST. 2026',
-  city: 'Lagos',
-  whatsappNumber: '2348012345678',
-  whatsappDisplay: '+234 801 234 5678',
-  tiktok: 'https://tiktok.com/@cimmple',
-  instagram: 'https://instagram.com/cimmple',
-  email: 'hello@cimmple.com',
+  name: '...',
+  nameStrong: 'CIMMPLE',
+  nameLight: 'HAIR',
+  suffix: '.',              // ← add this
+  established: '...',
+  city: '...',
+  whatsappNumber: '...',
+  whatsappDisplay: '...',
+  tiktok: '...',
+  instagram: '...',
+  email: '...',
 };
 
 export const BANK = {
